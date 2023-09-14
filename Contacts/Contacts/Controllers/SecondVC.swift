@@ -15,6 +15,7 @@ class SecondVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private var person = DataSource()
     
+    
 //MARK: - life circle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,22 +26,24 @@ class SecondVC: UIViewController {
 extension SecondVC: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
-        
+        return person.contactsList.count
     }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Contacts list"
+        let section = person.contactsList[section]
+        return section
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return person.contactsList.count
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "title", for: indexPath)
     
         let contact = person.contactsList[indexPath.row]
-        cell.textLabel?.text = contact
+        cell.textLabel?.text = person.personsContact[indexPath.section][indexPath.row]
+        print(contact)
         return cell
     }
 }

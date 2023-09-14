@@ -13,6 +13,20 @@ class DataSource {
 
     lazy var contactsList: [String] = fillingContactList()
     
+    var personsContact: [[String]] = [
+        ["name1@mail.com", "+375 29 111 11 11"],
+        ["name2@mail.com", "+375 29 111 11 12"],
+        ["name3@mail.com", "+375 29 111 11 13"],
+        ["name4@mail.com", "+375 29 111 11 14"],
+        ["name5@mail.com", "+375 29 111 11 15"],
+        ["name6@mail.com", "+375 29 111 11 16"],
+        ["name7@mail.com", "+375 29 111 11 17"],
+        ["name8@mail.com", "+375 29 111 11 18"],
+        ["name9@mail.com", "+375 29 111 11 19"],
+        ["name10@mail.com", "+375 29 111 11 10"]
+    ]
+    
+    
     var names: [String] = ["name1",
                           "name2",
                           "name3",
