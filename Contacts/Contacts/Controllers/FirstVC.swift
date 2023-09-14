@@ -21,7 +21,6 @@ class FirstVC: UIViewController {
         tableView.dataSource = self
     }
 }
-
 //MARK: - extention -
 extension FirstVC: UITableViewDataSource {
     
@@ -29,6 +28,7 @@ extension FirstVC: UITableViewDataSource {
         return 1
         
     }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Contacts list"
     }

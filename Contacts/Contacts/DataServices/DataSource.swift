@@ -26,7 +26,6 @@ class DataSource {
         ["name10@mail.com", "+375 29 111 11 10"]
     ]
     
-    
     var names: [String] = ["name1",
                           "name2",
                           "name3",
@@ -37,6 +36,7 @@ class DataSource {
                           "name8",
                           "name9",
                           "name10"]
+    
     var surName: [String] = [" surName1",
                              " surName2",
                              " surName3",

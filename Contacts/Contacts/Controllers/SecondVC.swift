@@ -10,19 +10,16 @@ import UIKit
 class SecondVC: UIViewController {
 
 //MARK: - property -
-    
-    
     @IBOutlet weak var tableView: UITableView!
     private var person = DataSource()
-    
-    
+
 //MARK: - life circle -
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
     }
 }
-
+//MARK: - extension -
 extension SecondVC: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,10 +44,3 @@ extension SecondVC: UITableViewDataSource {
         return cell
     }
 }
-
-//MARK: - property -
-//MARK: - private prorety -
-//MARK: - life circle -
-//MARK: - actions -
-//MARK: - private funcs -
-//MARK: - novigation -
