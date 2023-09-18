@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		FA0602E72AB2C47D0035B479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602E62AB2C47D0035B479 /* AppDelegate.swift */; };
 		FA0602E92AB2C47D0035B479 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602E82AB2C47D0035B479 /* SceneDelegate.swift */; };
-		FA0602EB2AB2C47D0035B479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602EA2AB2C47D0035B479 /* ViewController.swift */; };
 		FA0602EE2AB2C47D0035B479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0602EC2AB2C47D0035B479 /* Main.storyboard */; };
 		FA0602F02AB2C4820035B479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0602EF2AB2C4820035B479 /* Assets.xcassets */; };
 		FA0602F32AB2C4820035B479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0602F12AB2C4820035B479 /* LaunchScreen.storyboard */; };
+		FA0602FC2AB2C7380035B479 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602FB2AB2C7380035B479 /* FirstVC.swift */; };
+		FA0602FE2AB2C7560035B479 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602FD2AB2C7560035B479 /* SecondVC.swift */; };
+		FA0603002AB2CDE40035B479 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602FF2AB2CDE40035B479 /* Extentions.swift */; };
+		FA0603032AB2DDC80035B479 /* ContaktList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0603022AB2DDC80035B479 /* ContaktList.swift */; };
+		FA0603072AB2DEAC0035B479 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0603062AB2DEAC0035B479 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA0602E32AB2C47D0035B479 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0602E62AB2C47D0035B479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA0602E82AB2C47D0035B479 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA0602EA2AB2C47D0035B479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA0602ED2AB2C47D0035B479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA0602EF2AB2C4820035B479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA0602F22AB2C4820035B479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA0602F42AB2C4820035B479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0602FB2AB2C7380035B479 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		FA0602FD2AB2C7560035B479 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		FA0602FF2AB2CDE40035B479 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		FA0603022AB2DDC80035B479 /* ContaktList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaktList.swift; sourceTree = "<group>"; };
+		FA0603062AB2DEAC0035B479 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		FA0602E52AB2C47D0035B479 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				FA0603052AB2DE770035B479 /* DataServices */,
+				FA0603012AB2DD230035B479 /* Model */,
+				FA0602FA2AB2C6A40035B479 /* Controllers */,
+				FA0602EC2AB2C47D0035B479 /* Main.storyboard */,
+				FA0602F12AB2C4820035B479 /* LaunchScreen.storyboard */,
 				FA0602E62AB2C47D0035B479 /* AppDelegate.swift */,
 				FA0602E82AB2C47D0035B479 /* SceneDelegate.swift */,
-				FA0602EA2AB2C47D0035B479 /* ViewController.swift */,
-				FA0602EC2AB2C47D0035B479 /* Main.storyboard */,
-				FA0602EF2AB2C4820035B479 /* Assets.xcassets */,
-				FA0602F12AB2C4820035B479 /* LaunchScreen.storyboard */,
 				FA0602F42AB2C4820035B479 /* Info.plist */,
+				FA0602EF2AB2C4820035B479 /* Assets.xcassets */,
+				FA0602FF2AB2CDE40035B479 /* Extentions.swift */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		FA0602FA2AB2C6A40035B479 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0602FB2AB2C7380035B479 /* FirstVC.swift */,
+				FA0602FD2AB2C7560035B479 /* SecondVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA0603012AB2DD230035B479 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA0603022AB2DDC80035B479 /* ContaktList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA0603052AB2DE770035B479 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				FA0603062AB2DEAC0035B479 /* DataSource.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0602EB2AB2C47D0035B479 /* ViewController.swift in Sources */,
 				FA0602E72AB2C47D0035B479 /* AppDelegate.swift in Sources */,
+				FA0602FC2AB2C7380035B479 /* FirstVC.swift in Sources */,
+				FA0603032AB2DDC80035B479 /* ContaktList.swift in Sources */,
+				FA0603002AB2CDE40035B479 /* Extentions.swift in Sources */,
+				FA0602FE2AB2C7560035B479 /* SecondVC.swift in Sources */,
+				FA0603072AB2DEAC0035B479 /* DataSource.swift in Sources */,
 				FA0602E92AB2C47D0035B479 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
