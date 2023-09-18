@@ -13,7 +13,6 @@ struct Person {
     let email: String
     let phonNumber: String
 }
-    
 
 struct PersonData {
     

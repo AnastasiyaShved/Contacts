@@ -9,13 +9,9 @@ import UIKit
 
 class ThirdVC: UIViewController {
     
-    
     @IBOutlet weak var emailLbl: UILabel!
-    
     @IBOutlet weak var phoneNumberLbl: UILabel!
-    
-    
-    
+
     var personsData: Person?
 
     override func viewDidLoad() {
@@ -29,7 +25,7 @@ class ThirdVC: UIViewController {
             phoneNumberLbl.text = personsData.phonNumber
             
         }
-               // Do any additional setup after loading the view.
+
     }
 }
     

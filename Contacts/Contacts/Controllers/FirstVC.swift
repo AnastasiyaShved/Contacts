@@ -8,11 +8,9 @@
 import UIKit
 
 class FirstVC: UITableViewController {
-  
-    var persons = PersonData.createPersons().sorted { a, b -> Bool in a.name < b.name }
     
 //MARK: - property -
-
+    var persons = PersonData.createPersons().sorted { a, b -> Bool in a.name < b.name }
     private var person = DataSource()
  
 //MARK: - life circle -
@@ -21,11 +19,17 @@ class FirstVC: UITableViewController {
         tableView.dataSource = self
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-
     
+//MARK: - function -
    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = .white
+        header.tintColor = UIColor.blue
+        header.textLabel?.font = UIFont(name:"Helvetica-Regular", size: 25)
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -40,18 +44,11 @@ class FirstVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "title", for: indexPath)
     
         let contact = persons[indexPath.row]
-        cell.textLabel?.text = contact.name + contact.surName
-//        cell.detailTextLabel?.text = contact.name
+        cell.textLabel?.text = contact.surName
+        cell.detailTextLabel?.text = contact.name
         return cell
     }
             
-    
-    
-//    // ?????? редактирование
-//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return true
-//    }
-    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -59,7 +56,7 @@ class FirstVC: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             persons.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .left)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
@@ -68,7 +65,6 @@ class FirstVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to : IndexPath) {
-    
         let currentContact = persons.remove(at: fromIndexPath.row)
         persons.insert(currentContact, at: to.row)
     }

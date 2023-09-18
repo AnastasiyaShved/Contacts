@@ -9,13 +9,10 @@ import UIKit
 
 class SecondVC: UIViewController {
     
-
 //MARK: - property -
     @IBOutlet weak var tableView: UITableView!
-//    private var person = DataSource()
    
     let persons = PersonData.createPersons().sorted { a, b -> Bool in a.surName < b.surName }
-
 
 //MARK: - life circle -
     override func viewDidLoad() {
@@ -25,23 +22,24 @@ class SecondVC: UIViewController {
 }
 //MARK: - extension -
 extension SecondVC: UITableViewDataSource {
-//количество секций
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return persons.count
     }
+    
 
-    // название секции ??
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let section = persons[section]
-        return section.name + "" + section.surName
+        
+        return section.name + " " + section.surName
     }
 
-    // количество строк в секции
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
 
-    // заполнение секции
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "title", for: indexPath)
 
