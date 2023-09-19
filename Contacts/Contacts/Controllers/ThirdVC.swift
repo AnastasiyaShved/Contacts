@@ -17,6 +17,7 @@ class ThirdVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if let personsData = personsData {
             print(personsData.name + " " + personsData.phonNumber + " " + personsData.email)
             
@@ -27,6 +28,15 @@ class ThirdVC: UIViewController {
         }
 
     }
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is DataEditingVC{
+           let vc = segue.destination as? DataEditingVC
+            vc?.personsDataforediting = personsData
+        }
+    }
+        
 }
     
 
