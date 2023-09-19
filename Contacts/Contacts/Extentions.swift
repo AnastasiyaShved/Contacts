@@ -7,5 +7,11 @@
 
 import UIKit
 
+extension Collection {
+    subscript (safe i: Index) -> Element? {
+        return indices.contains(i) ? self[i] : nil
+    }
+}
+
 
 

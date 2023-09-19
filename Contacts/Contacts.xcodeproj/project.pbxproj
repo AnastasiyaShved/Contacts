@@ -15,8 +15,9 @@
 		FA0602FC2AB2C7380035B479 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602FB2AB2C7380035B479 /* FirstVC.swift */; };
 		FA0602FE2AB2C7560035B479 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602FD2AB2C7560035B479 /* SecondVC.swift */; };
 		FA0603002AB2CDE40035B479 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602FF2AB2CDE40035B479 /* Extentions.swift */; };
-		FA0603032AB2DDC80035B479 /* ContaktList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0603022AB2DDC80035B479 /* ContaktList.swift */; };
 		FA0603072AB2DEAC0035B479 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0603062AB2DEAC0035B479 /* DataSource.swift */; };
+		FA4516982AB5CC06001B875D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4516972AB5CC06001B875D /* Person.swift */; };
+		FA8CA5B62AB8C08A00C7FA14 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CA5B42AB8C08A00C7FA14 /* ThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		FA0602FB2AB2C7380035B479 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		FA0602FD2AB2C7560035B479 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		FA0602FF2AB2CDE40035B479 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
-		FA0603022AB2DDC80035B479 /* ContaktList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaktList.swift; sourceTree = "<group>"; };
 		FA0603062AB2DEAC0035B479 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		FA4516972AB5CC06001B875D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA8CA5B42AB8C08A00C7FA14 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,7 @@
 				FA0603052AB2DE770035B479 /* DataServices */,
 				FA0603012AB2DD230035B479 /* Model */,
 				FA0602FA2AB2C6A40035B479 /* Controllers */,
-				FA0602EC2AB2C47D0035B479 /* Main.storyboard */,
-				FA0602F12AB2C4820035B479 /* LaunchScreen.storyboard */,
+				FA8CA5B22AB8BE6600C7FA14 /* Storybords */,
 				FA0602E62AB2C47D0035B479 /* AppDelegate.swift */,
 				FA0602E82AB2C47D0035B479 /* SceneDelegate.swift */,
 				FA0602F42AB2C4820035B479 /* Info.plist */,
@@ -83,6 +84,7 @@
 			children = (
 				FA0602FB2AB2C7380035B479 /* FirstVC.swift */,
 				FA0602FD2AB2C7560035B479 /* SecondVC.swift */,
+				FA8CA5B42AB8C08A00C7FA14 /* ThirdVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -90,7 +92,7 @@
 		FA0603012AB2DD230035B479 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA0603022AB2DDC80035B479 /* ContaktList.swift */,
+				FA4516972AB5CC06001B875D /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +103,15 @@
 				FA0603062AB2DEAC0035B479 /* DataSource.swift */,
 			);
 			path = DataServices;
+			sourceTree = "<group>";
+		};
+		FA8CA5B22AB8BE6600C7FA14 /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				FA0602EC2AB2C47D0035B479 /* Main.storyboard */,
+				FA0602F12AB2C4820035B479 /* LaunchScreen.storyboard */,
+			);
+			path = Storybords;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +187,10 @@
 			files = (
 				FA0602E72AB2C47D0035B479 /* AppDelegate.swift in Sources */,
 				FA0602FC2AB2C7380035B479 /* FirstVC.swift in Sources */,
-				FA0603032AB2DDC80035B479 /* ContaktList.swift in Sources */,
 				FA0603002AB2CDE40035B479 /* Extentions.swift in Sources */,
 				FA0602FE2AB2C7560035B479 /* SecondVC.swift in Sources */,
+				FA8CA5B62AB8C08A00C7FA14 /* ThirdVC.swift in Sources */,
+				FA4516982AB5CC06001B875D /* Person.swift in Sources */,
 				FA0603072AB2DEAC0035B479 /* DataSource.swift in Sources */,
 				FA0602E92AB2C47D0035B479 /* SceneDelegate.swift in Sources */,
 			);
